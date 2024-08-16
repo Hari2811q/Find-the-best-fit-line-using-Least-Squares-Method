@@ -49,7 +49,8 @@ plt.show()
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/442039f2-0788-45f5-9534-03ff293f4d67)
+![image](https://github.com/user-attachments/assets/09e8129f-f738-40c3-875b-9989ae503f12)
+
 
 
 ## Result:
