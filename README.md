@@ -29,27 +29,32 @@ import numpy as np
 import matplotlib.pyplot as plt
 X=np.array(eval(input()))
 Y=np.array(eval(input()))
-Xmean=np.mean(X)
-Ymean=np.mean(Y)
-num,den=0,0 # num = numerator, den = denomenator
+X_mean=np.mean(X)
+print(X_mean)
+Y_mean=np.mean(Y)
+print(Y_mean)
+num=0
+denum=0
 for i in range(len(X)):
-  num+=(X[i]-Xmean)*(Y[i]-Ymean)
-  den+=(X[i]-Xmean)**2
-m=num/den
-c=Ymean-m*Xmean
-print(m,c)
-Y_pred=m*X+c
+  num+=(X[i]-X_mean)*(Y[i]-Y_mean)
+  denum+=(X[i]-X_mean)**2
+m=num/denum
+print(m)
+b=Y_mean - m*X_mean
+print(b)
+Y_pred=m*X+b
 print(Y_pred)
-plt.scatter(X,Y)
-plt.plot(X,Y_pred,color="red")
+plt.scatter(X,Y,color='blue')
+plt.plot(X,Y_pred,color='yellow') 
 plt.show()
-```
+
 
 ```
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/9f305620-e456-491e-8df1-2bf5559a441f)
+
+![image](https://github.com/user-attachments/assets/7bf8b32b-8945-403e-83e5-4b54ec6bdda3)
 
 
 
